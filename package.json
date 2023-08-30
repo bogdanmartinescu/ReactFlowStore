@@ -1,5 +1,5 @@
 {
-  "name": "ReactFlowStore",
+  "name": "react-flow-store",
   "version": "1.0.0",
   "description": "A simple, efficient, and flow-based state management library for React applications.",
   "main": "dist/index.js",
@@ -21,18 +21,26 @@
   },
   "homepage": "https://github.com/bogdanmartinescu/ReactFlowStore#readme",
   "devDependencies": {
+    "@testing-library/jest-dom": "^6.1.2",
+    "@testing-library/react": "^14.0.0",
     "@types/jest": "^29.5.4",
     "@types/node": "^20.5.7",
     "@types/react": "^18.2.21",
     "jest": "^29.6.4",
+    "jest-environment-jsdom": "^29.6.4",
+    "rxjs": "^7.8.1",
     "ts-jest": "^29.1.1",
     "typescript": "^5.2.2"
   },
   "jest": {
+    "preset": "ts-jest",
+    "testEnvironment": "jsdom",
+    "setupFilesAfterEnv": [
+      "@testing-library/jest-dom/extend-expect"
+    ],
     "transform": {
       "^.+\\.(ts|tsx)$": "ts-jest"
     },
-    "testEnvironment": "node",
     "moduleFileExtensions": [
       "ts",
       "tsx",
