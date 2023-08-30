@@ -1,0 +1,50 @@
+{
+  "name": "ReactFlowStore",
+  "version": "1.0.0",
+  "description": "A simple, efficient, and flow-based state management library for React applications.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "start": "tsc -w",
+    "build": "tsc",
+    "test": "jest",
+    "test:watch": "jest --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bogdanmartinescu/ReactFlowStore.git"
+  },
+  "author": "Liviu Martinescu<hi@mlb.ro>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bogdanmartinescu/ReactFlowStore/issues"
+  },
+  "homepage": "https://github.com/bogdanmartinescu/ReactFlowStore#readme",
+  "devDependencies": {
+    "@types/jest": "^29.5.4",
+    "@types/node": "^20.5.7",
+    "@types/react": "^18.2.21",
+    "jest": "^29.6.4",
+    "ts-jest": "^29.1.1",
+    "typescript": "^5.2.2"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.(ts|tsx)$": "ts-jest"
+    },
+    "testEnvironment": "node",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js"
+    ],
+    "testMatch": [
+      "**/__tests__/*.+(ts|tsx|js)"
+    ],
+    "globals": {
+      "ts-jest": {
+        "tsConfig": "tsconfig.json"
+      }
+    }
+  }
+}
