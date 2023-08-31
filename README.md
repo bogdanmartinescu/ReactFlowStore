@@ -20,7 +20,7 @@ npm install react-flow-store
 
 ## Usage
 
-Create a store:
+### Create a store:
 
 ```typescript
 // store.ts
@@ -77,12 +77,12 @@ import React from "react";
 import ReactDOM from "react-dom";
 import App from "./App";
 import store from "./store";
-import { StoreProvider } from "react-flow-store";
+import { ReactFlowStoreProvider } from "react-flow-store";
 
 ReactDOM.render(
-  <StoreProvider store={store}>
+  <ReactFlowStoreProvider store={store}>
     <App />
-  </StoreProvider>,
+  </ReactFlowStoreProvider>,
   document.getElementById("root")
 );
 ```
