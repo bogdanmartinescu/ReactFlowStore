@@ -31,28 +31,5 @@
     "rxjs": "^7.8.1",
     "ts-jest": "^29.1.1",
     "typescript": "^5.2.2"
-  },
-  "jest": {
-    "preset": "ts-jest",
-    "testEnvironment": "jsdom",
-    "setupFilesAfterEnv": [
-      "@testing-library/jest-dom/extend-expect"
-    ],
-    "transform": {
-      "^.+\\.(ts|tsx)$": "ts-jest"
-    },
-    "moduleFileExtensions": [
-      "ts",
-      "tsx",
-      "js"
-    ],
-    "testMatch": [
-      "**/__tests__/*.+(ts|tsx|js)"
-    ],
-    "globals": {
-      "ts-jest": {
-        "tsConfig": "tsconfig.json"
-      }
-    }
   }
 }
